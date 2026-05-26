@@ -1,3 +1,5 @@
 ("[" @open "]" @close)
 ("{" @open "}" @close)
-("\"" @open "\"" @close)
+(("\"" @open "\"" @close) (#set! rainbow.exclude))
+("(" @open ")" @close)
+(string_interp "\\(" @open ")" @close)
